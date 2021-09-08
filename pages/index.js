@@ -46,6 +46,6 @@ export const getStaticProps = async function () {
         };
       }),
     },
-    revalidate: 10,
+    revalidate: 1,
   };
 };
