@@ -4,6 +4,7 @@ import Layout from "../components/layout/Layout";
 import { Fragment } from "react";
 
 const homePage = function (props) {
+  
   return (
     <Fragment>
       <Layout />
