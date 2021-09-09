@@ -16,7 +16,7 @@ const getMeetUpInfo = function (props) {
         }}
       >
         <h2>{props.data.title}</h2>
-        <img style={{width: '100%'}} src={props.data.image}></img>
+        <img style={{ width: "100%" }} src={props.data.image}></img>
         <p>{props.data.description}</p>
       </div>
     </Fragment>
@@ -36,7 +36,7 @@ export const getStaticPaths = async function () {
 
   connection.close();
   return {
-    fallback: false,
+    fallback: true,
     paths: dataArray.map((item) => {
       return {
         params: {
@@ -68,7 +68,6 @@ export const getStaticProps = async function (context) {
 
   connection.close();
   return {
-    fallback: true,
     props: { data },
   };
 };
