@@ -68,6 +68,7 @@ export const getStaticProps = async function (context) {
 
   connection.close();
   return {
+    fallback: true,
     props: { data },
   };
 };
