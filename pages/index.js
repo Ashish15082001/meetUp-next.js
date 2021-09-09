@@ -2,11 +2,16 @@ import { MongoClient } from "mongodb";
 import MeetUpList from "../components/meetups/MeetupList";
 import Layout from "../components/layout/Layout";
 import { Fragment } from "react";
+import Head from 'next/head'
 
 const homePage = function (props) {
   
   return (
     <Fragment>
+      <Head>
+        <title>react meetups</title>
+        <meta name='description' content='this page shows all meet ups.'></meta>
+      </Head>
       <Layout />
       <div
         style={{
