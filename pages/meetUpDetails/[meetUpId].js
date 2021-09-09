@@ -36,7 +36,7 @@ export const getStaticPaths = async function () {
 
   connection.close();
   return {
-    fallback: true,
+    fallback: 'blocking',
     paths: dataArray.map((item) => {
       return {
         params: {
