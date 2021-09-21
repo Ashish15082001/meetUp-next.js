@@ -4,6 +4,7 @@ import Layout from "../../components/layout/Layout";
 
 const getMeetUpInfo = function (props) {
   //   console.log(props);
+  if (props.data === undefined) return <h2>loading...</h2>;
   return (
     <Fragment>
       <Layout />
